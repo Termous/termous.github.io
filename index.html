@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>My Home</title>
+  
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script> 
+    <script src="./animatescroll.js"></script>
+    <script src="./jquery.visible.min.js"></script>
+    <script src="https://aesign.me/script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137255986-1"></script>
+<script>
+
+const media = window.matchMedia('(prefers-color-scheme: dark)');
+
+
+$(window).on('load', function () {
+
+    console.log(media)
+
+if (media.matches) {
+    if ($("body").hasClass("semidarkbg")){
+            $("#githubimg").attr('src', './Images/GitHub.svg')
+        } else {
+            $("#githubimg").attr('src', './Images/GitHubDark.svg')
+        }
+        $("body").css("transition-duration","0s").toggleClass("semidarkbg")
+        $(".circle").css("transition-duration","0s").toggleClass("darkbg")
+        $(".bio").css("transition-duration","0s").toggleClass("darkbgblur")
+        $("p").css("transition-duration","0s").toggleClass("dark_p_h2")
+        $("h2").css("transition-duration","0s").toggleClass("dark_p_h2")
+        $(".bold").css("transition-duration","0s").toggleClass("darkbold")
+        $(".github").toggleClass("githubdark")
+        $(".github p").toggleClass("githubdarkspan")
+
+    }
+
+    
+})
+
+    media.addListener(() => {
+                if (! media.matches) {
+                    if ($("body").hasClass("semidarkbg")){
+                    $("#githubimg").attr('src', './Images/GitHub.svg')
+                    } else {
+                    $("#githubimg").attr('src', './Images/GitHubDark.svg')
+                    }
+                        $("body").css("transition-duration","0s").toggleClass("semidarkbg")
+                        $(".circle").css("transition-duration","0s").toggleClass("darkbg")
+                        $(".bio").css("transition-duration","0s").toggleClass("darkbgblur")
+                        $("p").css("transition-duration","0s").toggleClass("dark_p_h2")
+                        $("h2").css("transition-duration","0s").toggleClass("dark_p_h2")
+                        $(".bold").css("transition-duration","0s").toggleClass("darkbold")
+                        $(".github").toggleClass("githubdark")
+                        $(".github p").toggleClass("githubdarkspan")
+                    } else {
+                        if ($("body").hasClass("semidarkbg")){
+                    $("#githubimg").attr('src', './Images/GitHub.svg')
+                    } else {
+                    $("#githubimg").attr('src', './Images/GitHubDark.svg')
+                    }
+                        $("body").css("transition-duration","0s").toggleClass("semidarkbg")
+                        $(".circle").css("transition-duration","0s").toggleClass("darkbg")
+                        $(".bio").css("transition-duration","0s").toggleClass("darkbgblur")
+                        $("p").css("transition-duration","0s").toggleClass("dark_p_h2")
+                        $("h2").css("transition-duration","0s").toggleClass("dark_p_h2")
+                        $(".bold").css("transition-duration","0s").toggleClass("darkbold")
+                        $(".github").toggleClass("githubdark")
+                        $(".github p").toggleClass("githubdarkspan")
+                    }
+                    
+                }
+    );
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137255986-1');
+</script>
+
+</head>
+<body>
+    <div id="floatingdiv">
+        <a class="circle" id="floating_circlebutton" href="#" onclick="$('body').animatescroll({scrollSpeed:800,easing:'easeOutCubic'});"><img src="https://aesign.me/Images/Arrow.svg"/></a>
+   </div>
+   <nav class="nav"><a><svg id="aesignid" width="30px" height="33px" fill="#FFFFFF" viewBox="0 0 30 33" version="1.1">
+    <g transform="translate(-145.000000, -50.000000)" >
+        <path d="M150.824877,79.2554493 C145.534146,74.4429134 145.278625,66.3224339 150.254156,61.1178506 C155.229686,55.9132674 163.552136,55.5954503 168.842867,60.4079862 C169.261259,60.7885627 169.648162,61.1898259 170.003481,61.6086981 C169.319508,59.9782941 168.273126,58.4646075 166.868077,57.1865519 C161.629744,52.4216775 153.389717,52.7363471 148.463462,57.8893861 C147.675033,58.7141112 146.421116,58.7619957 145.623978,58.0369061 C144.82684,57.3118165 144.788342,56.0883295 145.537989,55.3041714 C147.504285,53.2113257 150.041756,51.6203786 153.002563,50.7373973 C162.012531,48.0504155 171.530837,52.9369347 174.262295,61.6517434 C176.376121,68.3959777 173.805884,75.4565287 168.359575,79.5500782 C163.314945,83.7696477 155.754118,83.7391679 150.824877,79.2554493 Z"></path>
+    </g>
+</svg></a></nav>
+    
+        <div class="midheader">
+            <img class="png" src="https://coolstar.org/electra/Electra.png">
+            <h2> <span class="bold">Developer</span>  & <span class="bold">Web</span> </h2>
+        </div>
+        <div class="endheader">
+            <a class="circle "  onclick="$('#aboutme').animatescroll({scrollSpeed:800,easing:'easeOutCubic'});" ><img src="https://aesign.me/Images/Arrow.svg" alt=""></a>
+        </div>
+    </div>
+
+    </section>
+
+
+    <section id="aboutme" class="bio">
+      
+        <p>  <h1>Hey!</h1>
+       <p>  I'm <span class="bold">I K Y</span>,</p>
+       <h1 class="tag">I Am Developer</h1>
+             <h2 class="tag">&</h2> 
+              <h1>I Am of </h1>
+              <p> <span class="bold">ENIGMA-DEV-TEAM</span></p>
+             <p><strong><a id="nightswitch" class="inline-btn">Turn Light</a></strong></p>
+             
+            </p></p>
+
+    </section>
+
+    <section id="socials" class="socialsection">
+        <div class="socialdiv">
+        <a ontouchend="this.onclick=buttonfix" class="social twitter" href="https://www.twitter.com/iamIKY2" target="_blank"><span class="iconsocial"><img src="https://aesign.me/Images/Twitter.svg"></span><p><span class="transparent">@</span>iamIKY2</p></a>
+        <a ontouchend="this.onclick=buttonfix" class="social github" href="https://github.com/iamIKY2" target="_blank"><span class="iconsocial"><img src="https://aesign.me/Images/GitHub.svg"></span><p><span class="transparent">@</span>iamIKY2</p></a>
+
+
+    </div>
+    </section>
+</div>
+</body>
+</html>
