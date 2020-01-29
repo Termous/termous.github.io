@@ -1,0 +1,52 @@
+Package: com.machport.camcam
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: machport
+Installed-Size: 212
+Depends: mobilesubstrate
+Filename: ./debs/com.machport.camcam_0.0.1_iphoneos-arm.deb
+Size: 6568
+MD5sum: a2b42c547f3d597a9aaf12b9b37999d6
+SHA1: 1d5293cf67864b7a712ffb99d493597fad05b40f
+SHA256: 706dbaee2c25b581a909abf9c5bbd8bd3a9dc0445d3b839c20eb3a968e613155
+Section: Tweaks
+Description: An awesome MobileSubstrate tweak!
+Author: machport
+Name: CamCam
+
+Package: com.machport.x13
+Version: 2.0-4+debug
+Architecture: iphoneos-arm
+Maintainer: machport
+Installed-Size: 208
+Depends: mobilesubstrate
+Filename: ./debs/com.machport.x13.deb
+Size: 9706
+MD5sum: 0388ae8e9bba1b54ecafc390f00b6c4f
+SHA1: 7e6fae2e222240d12954404805fb71dfff2379c5
+SHA256: 8bfa6e7d27bb8fc873ebb34ccb170d0f2fb6f593c15e0b2806b6d64c532d816e
+Section: Tweaks
+Description: Enables iPhone X Gestures On iOS 13
+Author: machport
+Depiction: https://hlmoore.github.io/repo/depictions/x13/index.html
+Name: X13
+Sileodepiction: https://hlmoore.github.io/repo/depictions/x13/Sileo.json
+
+Package: com.iamiky.loacliappstore
+Version: 1.4.2
+Architecture: iphoneos-arm
+Maintainer: I K Y
+Installed-Size: 212
+Depends: mobilesubstrate
+Filename: ./debs/com.iamiky.loacliappstore_1.4-2_iphoneos-arm.deb
+Size: 48
+MD5sum: 2807ecb6e5f10479d595ec93a0f9918d
+SHA1: decadde75267a4c59d9e63e0b1b63cf8649564aa
+SHA256: 48c2860480acf0fb4efbbb53177d0adbe4857b9381672c9c816ebe4afc371b2d
+Section: Tweaks
+Description: In app free purchases
+Author: I K Y
+Name: LocaliAppStore
+
+
+
